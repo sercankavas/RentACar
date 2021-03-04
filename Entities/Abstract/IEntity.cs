@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Concrete
+namespace Entities.Abstract
 {
-    class Product
+    public interface IEntity
     {
+
     }
 }
