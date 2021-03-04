@@ -47,7 +47,12 @@ namespace DataAccess.Concrete.InMemory
 
         public void Update(Car car)
         {
-            throw new NotImplementedException();
+            Car carUpdated = _cars.SingleOrDefault(c => c.Id == car.Id);
+            carUpdated.BrandId = car.BrandId;
+            carUpdated.ColorId = car.ColorId;
+            carUpdated.DailyPrice = car.DailyPrice;
+            carUpdated.ModelYear = car.ModelYear;
+            carUpdated.Description = car.Description;
         }
     }
 }
